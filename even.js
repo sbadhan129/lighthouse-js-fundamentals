@@ -1,9 +1,9 @@
-const isEven  = function (num) {
-  return num % 2 === 0;
+function ageCalculator(name, yearOfBirth, currentYear ){
+
+let age = currentYear - yearOfBirth;
+
+return "${name} is ${age} years old.";
+
 }
-
-const tenIsEven = isEven(10);
-const elevenIsEven = isEven(11);
-
-console.log(tenIsEven);
-console.log(elevenIsEven);
+console.log(ageCalculator("Miranda", 1983, 2015));
+console.log(ageCalculator("Ferdinand", 1988, 2015));
